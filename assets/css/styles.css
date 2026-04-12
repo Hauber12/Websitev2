@@ -301,4 +301,86 @@ select.input{cursor:pointer}textarea.input{resize:vertical;min-height:100px}
 @media(min-width:768px){.header-inner{height:72px}.brand-inline-logo{height:44px}.brand-inline-large{font-size:1.15rem}}
 
 /* Print */
-@media print{.site-header,.mobile-nav,.site-footer,.skip-link,.nav-toggle,.btn{display:none!important}body{font-size:12pt;color:#000;background:#fff}.hero,.page-head--photo{min-height:auto;padding:2rem 0;background:#eee}.hero h1,.page-head--photo h1{color:#000}.section{padding:1.5rem 0}}
+@media print{.site-header,.mobile-nav,.site-footer,.skip-link,.nav-toggle,.btn,.to-top,.hero-scroll{display:none!important}body{font-size:12pt;color:#000;background:#fff}.hero,.page-head--photo{min-height:auto;padding:2rem 0;background:#eee}.hero h1,.page-head--photo h1{color:#000}.section{padding:1.5rem 0}}
+
+/* ============================================
+   MUKASI v4.1 — Polish & Refinements
+   ============================================ */
+
+/* ── Section alt: subtle dot texture ── */
+.section-alt{background-image:radial-gradient(circle at 1px 1px,rgba(139,26,26,.05) 1px,transparent 0);background-size:28px 28px}
+
+/* ── Section heading: decorative gradient underline ── */
+.section-head h2{position:relative;display:inline-block}
+.section-head h2::after{content:'';display:block;width:48px;height:3px;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:2px;margin-top:.65rem}
+.section-dark .section-head h2::after,.section-red .section-head h2::after{background:linear-gradient(90deg,var(--gold-light),var(--gold))}
+
+/* ── Hero: richer overlay + entrance animation + scroll indicator ── */
+.hero-overlay{background:linear-gradient(180deg,rgba(26,26,31,.55) 0%,rgba(26,26,31,.35) 45%,rgba(139,26,26,.6) 100%)}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center bottom,rgba(200,160,74,.2),transparent 65%);pointer-events:none;z-index:1}
+.hero-content>*{animation:heroFade 1s var(--ease) both}
+.hero-content .eyebrow{animation-delay:.05s}
+.hero-content h1{animation-delay:.2s}
+.hero-content .lead{animation-delay:.35s}
+.hero-content .hero-actions{animation-delay:.5s}
+@keyframes heroFade{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-scroll{position:absolute;bottom:1.25rem;left:50%;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.7);font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.22em;display:flex;flex-direction:column;align-items:center;gap:.6rem;text-decoration:none;animation:heroFade 1s var(--ease) .85s both;cursor:pointer}
+.hero-scroll:hover{color:#fff}
+.hero-scroll-line{width:1px;height:36px;background:rgba(255,255,255,.25);position:relative;overflow:hidden}
+.hero-scroll-line::after{content:'';position:absolute;top:-36px;left:0;width:100%;height:36px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.9));animation:scrollDown 2.4s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes scrollDown{0%{top:-36px}65%{top:100%}100%{top:100%}}
+
+/* ── Cards: top gradient accent on hover ── */
+.card{overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease);z-index:1}
+.card:hover::before{transform:scaleX(1)}
+.card--flat::before,.filters.card::before{display:none}
+
+/* ── Icon cards: playful rotate on hover ── */
+.icon-card-icon{transition:background .3s,transform .5s var(--ease-bounce)}
+.icon-card:hover .icon-card-icon{transform:rotate(-6deg) scale(1.08);background:var(--red-bg-strong)}
+
+/* ── Stats: decorative marker + gradient numbers + divider ── */
+.stats-bar{position:relative}
+.stats-bar::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:48px;height:3px;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:2px}
+.stat-number{background:linear-gradient(135deg,var(--red) 0%,var(--red-light) 55%,var(--gold) 120%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--red)}
+.stat-item{position:relative}
+@media(min-width:640px){.stat-item+.stat-item::before{content:'';position:absolute;left:0;top:22%;bottom:22%;width:1px;background:linear-gradient(180deg,transparent,var(--border),transparent)}}
+
+/* ── Event cards: slightly livelier hover ── */
+.event-card:hover{transform:translateX(3px)}
+
+/* ── Register cards: gradient accent ── */
+.register-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease);z-index:2}
+.register-card{position:relative}
+.register-card:hover::after{transform:scaleX(1)}
+
+/* ── CTA: animated soft glow ── */
+.cta{position:relative;overflow:hidden}
+.cta::after{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at 30% 30%,rgba(200,160,74,.22),transparent 45%),radial-gradient(circle at 75% 85%,rgba(255,255,255,.08),transparent 50%);animation:ctaGlow 14s ease-in-out infinite;pointer-events:none}
+@keyframes ctaGlow{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.15) rotate(8deg)}}
+.cta>*{position:relative;z-index:1}
+
+/* ── Page head photo: gold bottom accent ── */
+.page-head--photo::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent 8%,var(--gold) 50%,transparent 92%);z-index:3;opacity:.55}
+
+/* ── Buttons: subtle shimmer on hover ── */
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);transform:translateX(-100%);transition:transform .7s var(--ease);pointer-events:none;z-index:-1}
+.btn:hover::before{transform:translateX(100%)}
+
+/* ── Footer: gold in top accent + pill hover ── */
+.site-footer::before{background:linear-gradient(90deg,var(--red) 0%,var(--gold) 50%,var(--red) 100%)}
+.footer-pill:hover{border-color:var(--gold);color:var(--gold-light)}
+
+/* ── Dropdown: more refined shadow ── */
+.dropdown{border-radius:var(--r-lg);box-shadow:var(--shadow-xl)}
+
+/* ── Back-to-top button ── */
+.to-top{position:fixed;bottom:1.25rem;right:1.25rem;width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-weight:700;box-shadow:var(--shadow-red);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:all .35s var(--ease);z-index:90;border:none;font-family:var(--ff);line-height:1}
+.to-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{background:var(--red-dark);transform:translateY(-3px);box-shadow:0 12px 30px rgba(139,26,26,.35)}
+@media(min-width:768px){.to-top{bottom:2rem;right:2rem;width:48px;height:48px}}
+
+/* ── Reduced motion ── */
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.hero-bg{transform:none!important}}

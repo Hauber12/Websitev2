@@ -16,11 +16,74 @@
     onScroll();
   };
 
-  // ── Hero animation ──
+  // ── Hero animation + scroll indicator ──
   const initHero = () => {
     const hero = $('[data-hero]');
     if (!hero) return;
     requestAnimationFrame(() => { hero.classList.add('is-visible'); });
+    if (!hero.querySelector('.hero-scroll')) {
+      const ind = document.createElement('a');
+      ind.className = 'hero-scroll';
+      ind.href = '#main';
+      ind.setAttribute('aria-label', 'Weiter scrollen');
+      ind.innerHTML = '<span>Entdecken</span><span class="hero-scroll-line" aria-hidden="true"></span>';
+      ind.addEventListener('click', e => {
+        e.preventDefault();
+        const next = hero.nextElementSibling;
+        if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        else window.scrollTo({ top: hero.offsetHeight, behavior: 'smooth' });
+      });
+      hero.appendChild(ind);
+    }
+  };
+
+  // ── Animated stat counters ──
+  const initStatCounters = () => {
+    if (!('IntersectionObserver' in window)) return;
+    const stats = $$('.stat-number');
+    if (!stats.length) return;
+    stats.forEach(el => {
+      const m = el.textContent.trim().match(/^(\D*)(\d+)(\D*)$/);
+      if (!m) return;
+      el.dataset.prefix = m[1];
+      el.dataset.target = m[2];
+      el.dataset.suffix = m[3];
+      el.textContent = m[1] + '0' + m[3];
+    });
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        obs.unobserve(el);
+        if (!el.dataset.target) return;
+        const target = parseInt(el.dataset.target, 10);
+        const prefix = el.dataset.prefix || '', suffix = el.dataset.suffix || '';
+        const duration = 1500, start = performance.now();
+        const tick = now => {
+          const p = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.4 });
+    stats.forEach(el => obs.observe(el));
+  };
+
+  // ── Back-to-top button ──
+  const initBackToTop = () => {
+    if (document.querySelector('.to-top')) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'to-top';
+    btn.setAttribute('aria-label', 'Nach oben');
+    btn.innerHTML = '↑';
+    document.body.appendChild(btn);
+    const onScroll = () => btn.classList.toggle('is-visible', window.pageYOffset > 600);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    onScroll();
   };
 
   // ── Active nav ──
@@ -231,7 +294,7 @@
 
   // ── Init ──
   const init = () => {
-    [initActiveNav, initMobileMenu, initHeaderScroll, initHero, initYear, initNextEvents, initEventDialog, initTermineFilter, initReveal, initSmooth, initDropdownA11y, initPrefetch]
+    [initActiveNav, initMobileMenu, initHeaderScroll, initHero, initYear, initNextEvents, initEventDialog, initTermineFilter, initReveal, initSmooth, initDropdownA11y, initPrefetch, initStatCounters, initBackToTop]
       .forEach(fn => { try { fn(); } catch (e) { console.error(fn.name + ':', e); } });
     console.log('✨ MUKASI v4.0 ready');
   };
