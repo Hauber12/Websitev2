@@ -1,299 +1,1170 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
-<meta charset="utf-8"/>
-<meta content="only light" name="color-scheme"/>
-  <meta name="supported-color-schemes" content="light">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-  <!-- Preload critical assets -->
-  <link rel="preload" href="assets/css/styles.modern.css?v7.0" as="style">
-  <link rel="preload" href="assets/img/notenschluessel.png" as="image">
-  
-<title>MUKASI — Musikkapelle Simmerberg</title>
-<meta content="Aktuelle Termine, Auftritte, News und Einblicke der Musikkapelle Simmerberg." name="description"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musikkapelle Simmerberg e.V. — MUKASI</title>
+<meta name="description" content="Musikkapelle Simmerberg e.V. — Blasmusik mit Herz und Leidenschaft im Allgäu. Termine, Jugendarbeit und mehr.">
+<meta name="color-scheme" content="only light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<link href="assets/css/styles.modern.css?v7.0" rel="stylesheet"/>
-</meta>
-</head>
-<body class="home">
-<a class="skip-link" href="#main" style="position:absolute;top:-100px;left:0;z-index:9999;background:var(--color-primary);color:#fff;padding:.8rem 1.5rem;border-radius:0 0 var(--radius-md) 0;transition:top .2s">Zum Inhalt springen</a>
-<header class="site-header" data-header="">
-<div class="container header-inner">
-<a aria-label="Startseite" class="brand-inline brand-inline--left" href="index.html">
-<img alt="Musikkapelle Simmerberg e.V." class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
-<div class="brand-inline-text">
-<span class="brand-inline-small">Musikkapelle</span>
-<span class="brand-inline-large">Simmerberg <small>e.V.</small></span>
-</div>
-</a>
-<nav aria-label="Hauptnavigation" class="site-nav site-nav--right" data-nav="">
-<a class="nav-link" href="index.html">Home</a>
-<div class="nav-item has-dropdown">
-<a class="nav-link" href="verein.html">Musikkapelle</a>
-<div aria-label="Musikkapelle Untermenü" class="dropdown" role="menu">
-<a class="dropdown-link" href="ueber-uns.html">Über uns</a>
-<a class="dropdown-link" href="verein-im-wandel.html">Verein im Wandel</a>
-<a class="dropdown-link" href="register.html">Register</a>
-<a class="dropdown-link" href="vorstandschaft.html">Vorstandschaft</a>
-<a class="dropdown-link" href="ehrenmitglieder.html">Ehrenmitglieder</a>
-</div>
-</div>
-<div class="nav-item has-dropdown">
-<a class="nav-link" href="foerderverein.html">Förderverein</a>
-<div aria-label="Förderverein Untermenü" class="dropdown" role="menu">
-<a class="dropdown-link" href="veranstaltungen.html">Veranstaltungen</a>
-</div>
-</div>
-<a class="nav-link" href="vergangenens.html">Vergangenes</a>
-<a class="nav-link" href="jugend.html">Jugend</a>
-<a class="nav-link nav-link--cta" href="termine.html">Termine 2026</a>
-</nav>
-<button type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="nav-toggle" data-nav-toggle="">
-<span aria-hidden="true" class="nav-toggle-bars"></span><span class="nav-toggle-label">Menü</span>
-</button>
-</div>
-
-</header>
-<div class="mobile-nav" data-mobile-nav="" id="mobile-menu">
-<div class="mobile-nav-inner">
-        <button class="mobile-nav-close" type="button" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
-<a class="nav-link" href="index.html">Home</a>
-<details class="mnav-details">
-<summary class="mnav-summary">Musikkapelle</summary>
-<div class="mnav-links">
-<a class="nav-link" href="ueber-uns.html">Über uns</a>
-<a class="nav-link" href="verein-im-wandel.html">Verein im Wandel</a>
-<a class="nav-link" href="register.html">Register</a>
-<a class="nav-link" href="vorstandschaft.html">Vorstandschaft</a>
-<a class="nav-link" href="ehrenmitglieder.html">Ehrenmitglieder</a>
-</div>
-</details>
-<details class="mnav-details">
-<summary class="mnav-summary">Förderverein</summary>
-<div class="mnav-links">
-<a class="nav-link" href="foerderverein.html">Unser Förderverein</a>
-<a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
-</div>
-</details>
-<a class="nav-link" href="vergangenens.html">Vergangenes</a>
-<a class="nav-link" href="jugend.html">Jugend</a>
-<a class="nav-link nav-link--cta" href="termine.html">Termine 2026</a>
-<a class="nav-link" href="kontakt.html">Kontakt</a>
-</div>
-</div>
-
-
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-.hero-fullscreen{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:0}
-.hero-fullscreen::before{content:'';position:absolute;inset:0;background:url('assets/img/hero-gruppenfoto.jpg') center/cover no-repeat;z-index:0}
-.hero-fullscreen::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.55) 100%);z-index:1}
-.hero-fullscreen .hero-content{position:relative;z-index:2;max-width:800px;padding:var(--space-xl);animation:fadeInUp .8s var(--ease-out)}
-.hero-fullscreen .hero-overline{font-family:'Source Sans 3',sans-serif;font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:var(--space-sm)}
-.hero-fullscreen .hero-overline::before,.hero-fullscreen .hero-overline::after{content:'—';margin:0 .5em;opacity:.5}
-.hero-fullscreen h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,6vw,4.5rem);color:#fff;line-height:1.1;margin-bottom:var(--space-md);text-shadow:0 2px 12px rgba(0,0,0,.3)}
-.hero-fullscreen .hero-sub{font-family:'Source Sans 3',sans-serif;font-size:clamp(1rem,1.8vw,1.25rem);color:rgba(255,255,255,.9);max-width:600px;margin:0 auto var(--space-xl);line-height:1.6}
-.hero-fullscreen .hero-buttons{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap}
-.hero-fullscreen .btn-hero-primary{background:var(--color-primary);color:#fff;padding:.85rem 2rem;border-radius:var(--radius-md);font-weight:600;font-size:1rem;text-decoration:none;transition:background .2s,transform .2s;border:2px solid var(--color-primary)}
-.hero-fullscreen .btn-hero-primary:hover{background:var(--color-primary-dark);transform:translateY(-1px)}
-.hero-fullscreen .btn-hero-secondary{background:transparent;color:#fff;padding:.85rem 2rem;border-radius:var(--radius-md);font-weight:600;font-size:1rem;text-decoration:none;transition:background .2s,transform .2s;border:2px solid rgba(255,255,255,.7)}
-.hero-fullscreen .btn-hero-secondary:hover{background:rgba(255,255,255,.15);transform:translateY(-1px)}
+/* ============================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================ */
+:root {
+  --primary: #8b1a1a;
+  --primary-light: #a52a2a;
+  --primary-dark: #6b1414;
+  --warm-bg-1: #fefcfc;
+  --warm-bg-2: #fef8f8;
+  --warm-bg-3: #fdf2f2;
+  --warm-bg-4: #f5eaea;
+  --dark: #1a1010;
+  --text: #2d2020;
+  --text-secondary: #8b7b7b;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --max-w: 1100px;
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-/* CTA Section */
-.cta-new{position:relative;padding:var(--space-2xl) 0;text-align:center;overflow:hidden;color:#fff}
-.cta-new-bg{position:absolute;inset:0;background:url('assets/img/mosaik-spielen.jpg') center/cover;z-index:0}
-.cta-new-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(139,26,26,.75) 0%,rgba(80,12,12,.85) 40%,rgba(20,10,10,.92) 100%)}
-.cta-new-inner{position:relative;z-index:1;max-width:640px;margin:0 auto}
-.cta-new h2{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:var(--space-md)}
-.cta-new p{color:rgba(255,255,255,.85);font-size:1.1rem;line-height:1.6;margin-bottom:var(--space-lg)}
-.cta-new-buttons{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;margin-bottom:var(--space-xl)}
-.cta-new-info{display:flex;gap:var(--space-lg);justify-content:center;flex-wrap:wrap;font-size:.9rem;color:rgba(255,255,255,.7)}
-.cta-btn-main{display:inline-block;padding:1rem 2.4rem;background:#fff;color:#8b1a1a !important;border-radius:var(--radius-md);font-weight:700;font-size:1.05rem;text-decoration:none;transition:all .25s;border:2px solid #fff;box-shadow:0 4px 15px rgba(0,0,0,.2)}
-.cta-btn-main:hover{background:rgba(255,255,255,.92);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
-.cta-btn-alt{display:inline-block;padding:1rem 2.4rem;background:transparent;color:#fff !important;border-radius:var(--radius-md);font-weight:600;font-size:1.05rem;text-decoration:none;transition:all .25s;border:2px solid rgba(255,255,255,.5)}
-.cta-btn-alt:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
-@media(max-width:640px){.cta-new-info{flex-direction:column;gap:var(--space-sm)}}
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--warm-bg-1);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--primary); text-decoration: none; transition: color 0.3s var(--ease-smooth); }
+a:hover { color: var(--primary-light); }
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text);
+}
 
-/* Mobile Hero */
-@media(max-width:640px){
-  .hero-fullscreen{min-height:85vh}
-  .hero-fullscreen h1{font-size:2rem}
-  .hero-fullscreen .hero-sub{font-size:.95rem}
-  .hero-fullscreen .hero-buttons{flex-direction:column;align-items:center}
-  .hero-fullscreen .btn-hero-primary,.hero-fullscreen .btn-hero-secondary{width:100%;max-width:280px;text-align:center}
-  .hero-fullscreen .hero-overline{font-size:.72rem;letter-spacing:.15em}
-  .intro-band{padding:var(--space-md) 0}
-  .intro-band h2{font-size:1.1rem;margin-bottom:var(--space-xs)}
-  .intro-stat-label{font-size:.75rem}
-  .section-head{flex-direction:row;align-items:baseline}
-  .mosaic{gap:var(--space-sm)}
-  .mosaic-img{border-radius:var(--radius-md)}
-  .next-grid{grid-template-columns:1fr!important}
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+.skip-link {
+  position: absolute; top: -100px; left: 0; z-index: 10000;
+  background: var(--primary); color: #fff; padding: 0.8rem 1.5rem;
+  border-radius: 0 0 8px 0; transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-bg { animation: none !important; }
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+/* Scroll-triggered fade-in */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 0 24px;
+  transition: background 0.4s, box-shadow 0.4s, padding 0.3s;
+}
+.site-nav.scrolled {
+  background: rgba(254, 252, 252, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 20px rgba(26, 16, 16, 0.08);
+}
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  transition: height 0.3s;
+}
+.site-nav.scrolled .nav-inner { height: 56px; }
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.4s;
+  white-space: nowrap;
+}
+.site-nav.scrolled .nav-brand { color: var(--text); }
+
+.nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+.nav-links a {
+  position: relative;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+.site-nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s var(--ease-smooth), left 0.3s var(--ease-smooth);
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+  left: 0;
+}
+.nav-links a.active { color: var(--primary); }
+.site-nav.scrolled .nav-links a.active { color: var(--primary); }
+
+/* Hamburger */
+.nav-hamburger {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px; position: relative;
+  flex-direction: column; justify-content: space-between;
+}
+.nav-hamburger span {
+  display: block; height: 2px; width: 100%; border-radius: 2px;
+  background: #fff; transition: all 0.3s;
+}
+.site-nav.scrolled .nav-hamburger span { background: var(--text); }
+.nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+/* Mobile overlay */
+.mobile-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  background: rgba(254, 252, 252, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 24px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s var(--ease-smooth);
+}
+.mobile-overlay.open { opacity: 1; pointer-events: auto; }
+.mobile-overlay a {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--text);
+  font-weight: 700;
+  transition: color 0.2s;
+}
+.mobile-overlay a:hover { color: var(--primary); }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 24px 80px;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('assets/img/hero-gruppenfoto.jpg') center/cover no-repeat;
+  animation: kenBurns 25s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes kenBurns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 16, 16, 0.2) 0%,
+    rgba(26, 16, 16, 0.35) 40%,
+    rgba(107, 20, 20, 0.55) 75%,
+    rgba(26, 16, 16, 0.75) 100%
+  );
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center;
+  max-width: 780px;
+  animation: heroFadeIn 1s var(--ease-out) 0.2s both;
+}
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-tagline {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 16px;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.25);
+}
+.hero-sub {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: rgba(255,255,255,0.88);
+  max-width: 560px;
+  margin: 0 auto 36px;
+  line-height: 1.65;
+}
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-primary, .btn-outline {
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-smooth);
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primary-light);
+  border-color: var(--primary-light);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(139, 26, 26, 0.35);
+}
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.6);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: #fff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+.hero-scroll svg { width: 24px; height: 24px; stroke: rgba(255,255,255,0.5); }
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ============================================================
+   SECTION DIVIDERS (SVG)
+   ============================================================ */
+.divider { display: block; width: 100%; line-height: 0; }
+.divider svg { display: block; width: 100%; height: auto; }
+
+/* ============================================================
+   SECTION: ÜBER UNS
+   ============================================================ */
+.section-ueber {
+  position: relative;
+  background: var(--warm-bg-2);
+  padding: 72px 0 80px;
+}
+.ueber-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.section-ueber h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 20px;
+}
+.ueber-text p {
+  margin-bottom: 16px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.stats-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+}
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.ueber-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(26, 16, 16, 0.12);
+}
+.ueber-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Decorative treble clef watermark */
+.watermark-clef {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: auto;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .ueber-grid { grid-template-columns: 1fr; gap: 36px; }
+  .ueber-image { max-height: 300px; }
+  .stats-row { gap: 24px; justify-content: center; }
+}
+
+/* ============================================================
+   SECTION: TERMINE
+   ============================================================ */
+.section-termine {
+  position: relative;
+  background: var(--warm-bg-1);
+  padding: 72px 0 80px;
+}
+.section-termine h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-center-sub {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+  font-size: 0.95rem;
+}
+.termine-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.termin-card {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(26, 16, 16, 0.06);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
+  align-items: flex-start;
+}
+.termin-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(26, 16, 16, 0.1);
+}
+.termin-date {
+  flex-shrink: 0;
+  text-align: center;
+  min-width: 56px;
+}
+.termin-day {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+.termin-month {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+.termin-info h3 {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+  color: var(--text);
+}
+.termin-meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+.termin-meta span + span::before { content: ' · '; }
+.termine-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+}
+.termine-link {
+  text-align: center;
+  margin-top: 36px;
+}
+.termine-link a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.3s;
+}
+.termine-link a:hover { border-color: var(--primary); }
+
+@media (max-width: 640px) {
+  .termine-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   SECTION: JUGEND
+   ============================================================ */
+.section-jugend {
+  position: relative;
+  background: var(--dark);
+  color: #fff;
+  padding: 80px 0 88px;
+  overflow: hidden;
+}
+.section-jugend .section-label { color: rgba(255,255,255,0.5); }
+.section-jugend h2 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 20px;
+}
+.jugend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.jugend-text p {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+.jugend-text .btn-primary {
+  margin-top: 12px;
+  display: inline-block;
+}
+.jugend-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.jugend-image img { width: 100%; display: block; object-fit: cover; }
+/* Subtle decorative clef in jugend */
+.jugend-watermark {
+  position: absolute;
+  left: -40px;
+  bottom: -60px;
+  width: 300px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .jugend-grid { grid-template-columns: 1fr; gap: 36px; }
+  .section-jugend { padding: 64px 0 72px; }
+}
+
+/* ============================================================
+   SECTION: KONTAKT
+   ============================================================ */
+.section-kontakt {
+  background: var(--warm-bg-3);
+  padding: 72px 0 80px;
+}
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.section-kontakt h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 20px;
+}
+.kontakt-form { display: flex; flex-direction: column; gap: 24px; }
+.form-group { position: relative; }
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #d5c8c8;
+  outline: none;
+  transition: border-color 0.4s var(--ease-smooth);
+  border-radius: 0;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-group .underline-anim {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--primary);
+  transition: width 0.4s var(--ease-smooth);
+  pointer-events: none;
+}
+.form-group input:focus ~ .underline-anim,
+.form-group textarea:focus ~ .underline-anim {
+  width: 100%;
+}
+.btn-submit {
+  padding: 14px 36px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-smooth);
+  align-self: flex-start;
+}
+.btn-submit:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 26, 26, 0.3);
+}
+.kontakt-info { padding-top: 8px; }
+.kontakt-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.kontakt-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+.kontakt-detail svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: var(--primary);
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .kontakt-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  position: relative;
+  background: var(--dark);
+  color: rgba(255,255,255,0.6);
+  padding: 56px 0 32px;
+  overflow: hidden;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.footer-tagline {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+}
+.footer-links { display: flex; gap: 40px; flex-wrap: wrap; }
+.footer-col { display: flex; flex-direction: column; gap: 8px; }
+.footer-heading {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.35);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.footer-col a {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: #fff; }
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-legal a {
+  color: rgba(255,255,255,0.45);
+  margin-left: 16px;
+  transition: color 0.2s;
+}
+.footer-legal a:hover { color: rgba(255,255,255,0.8); }
+/* Decorative footer clef */
+.footer-watermark {
+  position: absolute;
+  right: 40px;
+  bottom: -20px;
+  width: 200px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .footer-inner { flex-direction: column; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* ============================================================
+   MOBILE HERO ADJUSTMENTS
+   ============================================================ */
+@media (max-width: 640px) {
+  .hero { min-height: 90vh; padding-bottom: 60px; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 260px; text-align: center; }
 }
 </style>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="site-nav" id="siteNav" aria-label="Hauptnavigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">Musikkapelle Simmerberg</a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-section="hero">Start</a></li>
+      <li><a href="#ueber" data-section="ueber">Über uns</a></li>
+      <li><a href="#termine" data-section="termine">Termine</a></li>
+      <li><a href="#jugend" data-section="jugend">Jugend</a></li>
+      <li><a href="#kontakt" data-section="kontakt">Kontakt</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+  <a href="#hero" data-mobile-link>Start</a>
+  <a href="#ueber" data-mobile-link>Über uns</a>
+  <a href="#termine" data-mobile-link>Termine</a>
+  <a href="#jugend" data-mobile-link>Jugend</a>
+  <a href="#kontakt" data-mobile-link>Kontakt</a>
+</div>
+
 <main id="main">
-<!-- HERO -->
-<section class="hero-fullscreen">
-<div class="hero-content">
-<p class="hero-overline">Musikkapelle Simmerberg e.V.</p>
-<h1>Blasmusik mit Herz &amp; Leidenschaft</h1>
-<p class="hero-sub">Von traditionellen Märschen bis modernen Arrangements – wir sind rund 50 Musikantinnen und Musikanten, die mit Freude zusammen musizieren.</p>
-<div class="hero-buttons">
-<a class="btn-hero-primary" href="termine.html">Termine ansehen</a>
-<a class="btn-hero-secondary" href="kontakt.html">Mitmachen</a>
-</div>
-</div>
-</section>
-<style>
-/* --- Welcome + Eindrücke combined --- */
-.intro-band{background:var(--color-primary);color:#fff;padding:var(--space-lg) 0}
-.intro-band h2{color:#fff;font-size:clamp(1.4rem,2.5vw,1.8rem);margin-bottom:var(--space-sm)}
-.intro-band .eyebrow{color:rgba(255,255,255,.7)}
-.intro-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md);margin-top:var(--space-md);text-align:center;max-width:700px;margin-left:auto;margin-right:auto}
-@media(max-width:640px){.intro-stats{grid-template-columns:repeat(3,1fr);gap:var(--space-sm)}}
-.intro-stat-num{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3vw,2.2rem);font-weight:700;line-height:1}
-.intro-stat-label{font-size:.9rem;opacity:.8;margin-top:4px}
 
-.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:var(--space-md);margin-top:var(--space-xl)}
-@media(max-width:768px){.mosaic{grid-template-columns:1fr}}
-.mosaic-img{border-radius:var(--radius-lg);overflow:hidden;position:relative}
-.mosaic-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
-.mosaic-img:hover img{transform:scale(1.03)}
-.mosaic-img.tall{grid-row:1/3}
-@media(max-width:768px){.mosaic-img.tall{grid-row:auto}}
-.mosaic-caption{position:absolute;bottom:0;left:0;right:0;padding:var(--space-sm) var(--space-md);background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-size:.85rem;font-weight:600}
-
-
-</style>
-
-<!-- ZAHLEN-BAND -->
-<section class="intro-band">
-<div class="container">
-<h2 style="text-align:center">Blasmusik seit Generationen</h2>
-<div class="intro-stats">
-<div>
-<div class="intro-stat-num">~50</div>
-<div class="intro-stat-label">Aktive Musikanten</div>
-</div>
-<div>
-<div class="intro-stat-num">100+</div>
-<div class="intro-stat-label">Jahre Tradition</div>
-</div>
-<div>
-<div class="intro-stat-num">5+</div>
-<div class="intro-stat-label">Auftritte / Jahr</div>
-</div>
-
-</div>
-</div>
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-tagline">Seit Generationen · Simmerberg im Allgäu</p>
+    <h1>Musikkapelle Simmerberg&nbsp;e.V.</h1>
+    <p class="hero-sub">Rund 50 Musikantinnen und Musikanten — von traditionellen Märschen bis modernen Arrangements. Mit Herz, Leidenschaft und Blasmusik.</p>
+    <div class="hero-buttons">
+      <a href="#termine" class="btn-primary">Termine ansehen</a>
+      <a href="#kontakt" class="btn-outline">Mitmachen</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
 </section>
 
-<!-- BILDER-MOSAIK + FEATURES -->
-<section class="section">
-<div class="container">
-<div class="section-head">
-<h2>Eindrücke</h2>
-<a class="link" href="verein-im-wandel.html">Unser Verein</a>
-</div>
-<div class="mosaic">
-<div class="mosaic-img tall">
-<img alt="Festumzug der Musikkapelle Simmerberg" loading="lazy" src="assets/img/mosaik-festumzug.jpg"/>
-<div class="mosaic-caption">Festumzug mit Fahne und Tracht</div>
-</div>
-<div class="mosaic-img">
-<img alt="Festzelt-Stimmung" loading="lazy" src="assets/img/mosaik-spielen.jpg"/>
-<div class="mosaic-caption">Musizieren mit Publikum</div>
-</div>
-<div class="mosaic-img">
-<img alt="Gruppenfoto Musikkapelle Simmerberg" loading="lazy" src="assets/img/mosaik-ausflug.jpg"/>
-<div class="mosaic-caption">Gemeinsam unterwegs</div>
-</div>
+<!-- Divider: Hero → Über uns (wave) -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#fef8f8"/>
+  </svg>
 </div>
 
-</div>
+<!-- ============================================================
+     ÜBER UNS
+     ============================================================ -->
+<section class="section-ueber" id="ueber">
+  <!-- Treble clef watermark -->
+  <svg class="watermark-clef" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="serif" font-size="420" fill="#8b1a1a">𝄞</text>
+  </svg>
+  <div class="container">
+    <div class="ueber-grid">
+      <div class="ueber-text">
+        <p class="section-label reveal">Über uns</p>
+        <h2 class="reveal">Blasmusik seit Generationen</h2>
+        <p class="reveal">Die Musikkapelle Simmerberg e.V. verbindet seit über 100 Jahren Tradition und Gemeinschaft im Herzen des Allgäus. Mit rund 50 aktiven Musikantinnen und Musikanten spielen wir bei Dorffesten, Standkonzerten, kirchlichen Anlässen und weit darüber hinaus.</p>
+        <p class="reveal">Was uns zusammenhält? Die Freude am gemeinsamen Musizieren — ob bei der Probe am Freitagabend, beim Marsch durch Simmerberg oder beim gemütlichen Zusammensein nach dem Auftritt.</p>
+        <div class="stats-row reveal">
+          <div class="stat-item">
+            <div class="stat-num" data-count="50">~50</div>
+            <div class="stat-label">Aktive Musiker</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100+</div>
+            <div class="stat-label">Jahre Tradition</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Register</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Auftritte / Jahr</div>
+          </div>
+        </div>
+      </div>
+      <div class="ueber-image reveal">
+        <img src="assets/img/mosaik-festumzug.jpg" alt="Festumzug der Musikkapelle Simmerberg in Tracht" loading="lazy">
+      </div>
+    </div>
+  </div>
 </section>
-<!-- NÄCHSTE TERMINE -->
-<section class="section section-alt page-tint">
-<div class="container">
-<div class="section-head">
-<h2>Nächste Termine</h2>
-<a class="link" href="termine.html">Alle anzeigen</a>
+
+<!-- Divider: Über uns → Termine (diagonal) -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L1440,60 L1440,60 L0,60 Z" fill="#fef8f8"/>
+    <path d="M0,0 L1440,60 L1440,60 L0,60 Z" fill="#fefcfc"/>
+  </svg>
 </div>
-<div class="next-grid" data-next-events="">
-<div class="empty-state" style="padding:18px;">
-<strong>Nächste Termine werden geladen…</strong>
-<p class="muted small" style="margin:6px 0 0;">Falls hier nichts erscheint, sind momentan keine Termine vorhanden.</p>
-</div>
-</div>
-</div>
+
+<!-- ============================================================
+     TERMINE
+     ============================================================ -->
+<section class="section-termine" id="termine">
+  <div class="container">
+    <p class="section-label reveal" style="text-align:center">Termine</p>
+    <h2 class="reveal">Nächste Auftritte & Veranstaltungen</h2>
+    <p class="section-center-sub reveal">Unsere kommenden Termine im Überblick</p>
+    <div class="termine-grid" id="termineGrid">
+      <div class="termine-empty">Termine werden geladen…</div>
+    </div>
+    <div class="termine-link reveal">
+      <a href="termine.html">Alle Termine ansehen →</a>
+    </div>
+  </div>
 </section>
-<!-- CTA -->
-<section class="cta-new">
-<div class="cta-new-bg"></div>
-<div class="container cta-new-inner">
-<h2>Lust auf Blasmusik?</h2>
-<p>Ob aktiv mitspielen, als Jungmusikant starten oder den Verein unterstützen – wir freuen uns auf dich!</p>
-<div class="cta-new-buttons">
-<a class="cta-btn-main" href="kontakt.html">Schreib uns</a>
-<a class="cta-btn-alt" href="jugend.html">Jugend &amp; Ausbildung</a>
+
+<!-- Divider: Termine → Jugend (curve) -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,80 C480,0 960,0 1440,80 L1440,80 L0,80 Z" fill="#1a1010"/>
+  </svg>
 </div>
-<div class="cta-new-info">
-<span>📍 Simmerberg im Allgäu</span>
-<span>🎵 Proben: Freitag · 20:00 Uhr</span>
-<span>✉️ mukasi@gmx.net</span>
-</div>
-</div>
+
+<!-- ============================================================
+     JUGEND
+     ============================================================ -->
+<section class="section-jugend" id="jugend">
+  <svg class="jugend-watermark" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="serif" font-size="420" fill="#fff">𝄞</text>
+  </svg>
+  <div class="container">
+    <div class="jugend-grid">
+      <div class="jugend-text">
+        <p class="section-label reveal">Jugend & Ausbildung</p>
+        <h2 class="reveal">Die Zukunft der Blasmusik</h2>
+        <p class="reveal">Unsere Jugendarbeit liegt uns besonders am Herzen. In Zusammenarbeit mit der Musikschule ermöglichen wir Kindern und Jugendlichen den Einstieg in die Welt der Blasmusik — vom ersten Ton bis zum Auftritt mit der Jugendkapelle.</p>
+        <p class="reveal">Ob Querflöte, Trompete, Klarinette oder Schlagzeug — wer Lust hat, ein Instrument zu lernen, ist bei uns herzlich willkommen. Sprich uns einfach an!</p>
+        <a href="#kontakt" class="btn-primary reveal" style="margin-top: 20px;">Jetzt anfragen</a>
+      </div>
+      <div class="jugend-image reveal">
+        <img src="assets/img/mosaik-spielen.jpg" alt="Junge Musiker beim gemeinsamen Musizieren" loading="lazy">
+      </div>
+    </div>
+  </div>
 </section>
-<script id="next-events-data" type="application/json">[{"title": "Spieleabend", "date": "2026-04-25T19:00", "type": "verein", "location": "Krone (Simmerberg)", "notes": ""}, {"title": "Maibaum aufstellen", "date": "2026-05-01T00:00", "type": "auftritt", "location": "Simmerberg", "notes": ""}, {"title": "Heilige Kommunion", "date": "2026-05-03T10:15", "type": "auftritt", "location": "Simmerberg", "notes": ""}, {"title": "1. Standkonzert", "date": "2026-05-20T19:30", "type": "auftritt", "location": "Simmerberg", "notes": "mit Trachtenverein"}]</script>
+
+<!-- Divider: Jugend → Kontakt (wave inverted) -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 C360,80 1080,0 1440,60 L1440,80 L0,80 Z" fill="#1a1010"/>
+    <path d="M0,20 C360,80 1080,10 1440,60 L1440,80 L0,80 Z" fill="#fdf2f2"/>
+  </svg>
+</div>
+
+<!-- ============================================================
+     KONTAKT
+     ============================================================ -->
+<section class="section-kontakt" id="kontakt">
+  <div class="container">
+    <div class="kontakt-grid">
+      <div>
+        <p class="section-label reveal">Kontakt</p>
+        <h2 class="reveal">Schreib uns</h2>
+        <p class="reveal" style="color: var(--text-secondary); margin-bottom: 32px;">Fragen, Interesse am Verein oder eine Nachricht? Wir freuen uns von dir zu hören.</p>
+        <form class="kontakt-form" action="https://formspree.io/f/xvgpagvr" method="POST">
+          <div class="form-group reveal">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="underline-anim"></span>
+          </div>
+          <div class="form-group reveal reveal-delay-1">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <span class="underline-anim"></span>
+          </div>
+          <div class="form-group reveal reveal-delay-2">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="underline-anim"></span>
+          </div>
+          <button type="submit" class="btn-submit reveal reveal-delay-3">Nachricht senden</button>
+        </form>
+      </div>
+      <div class="kontakt-info reveal">
+        <h3>Musikkapelle Simmerberg e.V.</h3>
+        <div class="kontakt-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Simmerberg im Allgäu<br>Landkreis Lindau (Bodensee)</span>
+        </div>
+        <div class="kontakt-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+          <span><a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a></span>
+        </div>
+        <div class="kontakt-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Proben: Freitag · 20:00 Uhr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer class="site-footer-new">
-<div class="container">
-<div class="footer-top-new">
-<div class="footer-brand-new">
-<img src="assets/img/notenschluessel.png" alt="" class="footer-logo-new" aria-hidden="true"/>
-<div>
-<div class="footer-name-new">Musikkapelle Simmerberg</div>
-<div class="footer-tagline-new">Blasmusik für Jung & Alt seit Generationen</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<!-- Divider: Kontakt → Footer -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L1440,30 L1440,50 L0,50 Z" fill="#fdf2f2"/>
+    <path d="M0,20 L1440,40 L1440,50 L0,50 Z" fill="#1a1010"/>
+  </svg>
 </div>
-</div>
-<div class="footer-nav-new">
-<div class="footer-col-new">
-<div class="footer-heading-new">Verein</div>
-<a href="ueber-uns.html">Über uns</a>
-<a href="register.html">Register</a>
-<a href="vorstandschaft.html">Vorstandschaft</a>
-<a href="ehrenmitglieder.html">Ehrenmitglieder</a>
-</div>
-<div class="footer-col-new">
-<div class="footer-heading-new">Aktuelles</div>
-<a href="termine.html">Termine 2026</a>
-<a href="jugend.html">Jugend</a>
-<a href="foerderverein.html">Förderverein</a>
-<a href="vergangenens.html">Vergangenes</a>
-</div>
-<div class="footer-col-new">
-<div class="footer-heading-new">Kontakt</div>
-<a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
-<span class="footer-info-new">Proben: Freitag · 20:00 Uhr</span>
-<span class="footer-info-new">Simmerberg im Allgäu</span>
-<a href="kontakt.html" class="footer-cta-new">Schreib uns →</a>
-</div>
-</div>
-</div>
-<div class="footer-bottom-new">
-<span>© <span data-year></span> Musikkapelle Simmerberg e.V.</span>
-<div class="footer-legal-new">
-<a href="impressum.html">Impressum</a>
-<span class="footer-dot">·</span>
-<a href="datenschutz.html">Datenschutz</a>
-</div>
-</div>
-</div>
+
+<footer class="site-footer">
+  <!-- Decorative clef -->
+  <svg class="footer-watermark" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-family="serif" font-size="420" fill="#fff">𝄞</text>
+  </svg>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Musikkapelle Simmerberg</div>
+        <div class="footer-tagline">Blasmusik für Jung & Alt seit Generationen</div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-heading">Verein</div>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="register.html">Register</a>
+          <a href="vorstandschaft.html">Vorstandschaft</a>
+          <a href="jugend.html">Jugend</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Aktuelles</div>
+          <a href="termine.html">Termine 2026</a>
+          <a href="foerderverein.html">Förderverein</a>
+          <a href="vergangenens.html">Vergangenes</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Kontakt</div>
+          <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
+          <a href="kontakt.html">Schreib uns →</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footerYear"></span> Musikkapelle Simmerberg e.V.</span>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
 </footer>
-<script src="assets/data/termine.v26.js"></script>
-<script defer="" src="assets/js/main.modern.js?v7.0"></script>
+
+<!-- ============================================================
+     INLINE TERMINE DATA (Fallback / Embedded)
+     ============================================================ -->
+<script id="termine-data" type="application/json">
+[
+  {"title":"Spieleabend","date":"2026-04-25T19:00","type":"verein","location":"Krone (Simmerberg)"},
+  {"title":"Maibaum aufstellen","date":"2026-05-01T00:00","type":"auftritt","location":"Simmerberg"},
+  {"title":"Heilige Kommunion","date":"2026-05-03T10:15","type":"auftritt","location":"Simmerberg"},
+  {"title":"1. Standkonzert","date":"2026-05-20T19:30","type":"auftritt","location":"Simmerberg","notes":"mit Trachtenverein"},
+  {"title":"150 Jahre Feuerwehr Stiefenhofen","date":"2026-05-24T13:30","type":"auftritt","location":"Stiefenhofen","notes":"Umzug"},
+  {"title":"Weckruf Fronleichnam","date":"2026-06-04T06:00","type":"auftritt","location":"Simmerberg"},
+  {"title":"Fronleichnam Prozession","date":"2026-06-04T08:45","type":"auftritt","location":"Simmerberg"},
+  {"title":"150 Jahre Feuerwehr Röthenbach","date":"2026-06-14T13:00","type":"auftritt","location":"Röthenbach","notes":"Umzug"},
+  {"title":"Sternmarsch Krumbach (AT)","date":"2026-06-19T18:30","type":"auftritt","location":"Krumbach (Österreich)"},
+  {"title":"2. Standkonzert","date":"2026-06-25T19:30","type":"auftritt","location":"Simmerberg","notes":"mit Trachtenverein"},
+  {"title":"Bezirksmusikfest Maierhöfen","date":"2026-07-05T13:00","type":"auftritt","location":"Maierhöfen"},
+  {"title":"Salzzug Simmerberg","date":"2026-07-11T00:00","type":"auftritt","location":"Simmerberg"},
+  {"title":"Standkonzert Weiler","date":"2026-07-14T20:00","type":"auftritt","location":"Weiler"},
+  {"title":"Abendmesse Hochgrat","date":"2026-08-04T19:30","type":"auftritt","location":"Hochgrat"},
+  {"title":"3. Standkonzert","date":"2026-08-07T19:30","type":"auftritt","location":"Simmerberg","notes":"mit Trachtenverein"},
+  {"title":"4. Standkonzert – Frühschoppen","date":"2026-09-13T10:30","type":"auftritt","location":"Simmerberg","notes":"mit Trachtenverein"},
+  {"title":"Erntedank Simmerberg","date":"2026-10-04T10:15","type":"auftritt","location":"Simmerberg"},
+  {"title":"Volkstrauertag","date":"2026-11-15T10:15","type":"auftritt","location":"Simmerberg"},
+  {"title":"Jahreskonzert","date":"2026-11-28T00:00","type":"konzert","location":"Simmerberg"},
+  {"title":"Weihnachtsmarkt Simmerberg","date":"2026-11-29T13:00","type":"auftritt","location":"Simmerberg"}
+]
+</script>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function() {
+  'use strict';
+
+  /* ---- NAV: Scroll state ---- */
+  const nav = document.getElementById('siteNav');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---- NAV: Active section highlighting ---- */
+  const navLinks = document.querySelectorAll('.nav-links a[data-section]');
+  const sections = document.querySelectorAll('section[id]');
+  const observerNav = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.dataset.section === entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observerNav.observe(s));
+
+  /* ---- MOBILE NAV ---- */
+  const hamburger = document.getElementById('navHamburger');
+  const overlay = document.getElementById('mobileOverlay');
+  const mobileLinks = document.querySelectorAll('[data-mobile-link]');
+  function toggleMobile() {
+    const isOpen = overlay.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    overlay.setAttribute('aria-hidden', !isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  hamburger.addEventListener('click', toggleMobile);
+  mobileLinks.forEach(link => link.addEventListener('click', () => {
+    if (overlay.classList.contains('open')) toggleMobile();
+  }));
+
+  /* ---- SCROLL REVEAL (IntersectionObserver) ---- */
+  const reveals = document.querySelectorAll('.reveal');
+  const observerReveal = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observerReveal.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observerReveal.observe(el));
+
+  /* ---- TERMINE ---- */
+  const MONTHS_DE = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+  function formatTime(dateStr) {
+    const d = new Date(dateStr);
+    const h = d.getHours();
+    const m = d.getMinutes();
+    if (h === 0 && m === 0) return '';
+    return h.toString().padStart(2, '0') + ':' + m.toString().padStart(2, '0') + ' Uhr';
+  }
+
+  function renderTermine(data) {
+    const grid = document.getElementById('termineGrid');
+    const now = new Date();
+    // Filter future events and take next 6
+    const upcoming = data
+      .filter(t => new Date(t.date) >= now)
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .slice(0, 6);
+
+    if (upcoming.length === 0) {
+      grid.innerHTML = '<div class="termine-empty">Momentan sind keine Termine geplant.</div>';
+      return;
+    }
+
+    grid.innerHTML = upcoming.map((t, i) => {
+      const d = new Date(t.date);
+      const day = d.getDate();
+      const month = MONTHS_DE[d.getMonth()];
+      const time = formatTime(t.date);
+      const delayClass = 'reveal reveal-delay-' + Math.min(i, 4);
+      return `
+        <div class="termin-card ${delayClass}">
+          <div class="termin-date">
+            <div class="termin-day">${day}</div>
+            <div class="termin-month">${month}</div>
+          </div>
+          <div class="termin-info">
+            <h3>${t.title}</h3>
+            <div class="termin-meta">
+              ${t.location ? '<span>' + t.location + '</span>' : ''}
+              ${time ? '<span>' + time + '</span>' : ''}
+              ${t.notes ? '<span>' + t.notes + '</span>' : ''}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    // Re-observe the new cards
+    grid.querySelectorAll('.reveal').forEach(el => observerReveal.observe(el));
+  }
+
+  // Try fetch termine.json, fallback to inline data
+  fetch('termine.json')
+    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+    .then(renderTermine)
+    .catch(() => {
+      try {
+        const inline = JSON.parse(document.getElementById('termine-data').textContent);
+        renderTermine(inline);
+      } catch(e) {
+        document.getElementById('termineGrid').innerHTML =
+          '<div class="termine-empty">Termine konnten nicht geladen werden.</div>';
+      }
+    });
+
+  /* ---- FOOTER YEAR ---- */
+  const yearEl = document.getElementById('footerYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+})();
+</script>
+
 </body>
 </html>
