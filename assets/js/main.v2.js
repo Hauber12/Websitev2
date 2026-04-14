@@ -110,7 +110,7 @@
         <div class="event-meta">
           <span>⏰ ${time}</span>
           ${ev.location ? `<span>📍 ${escapeHtml(ev.location)}</span>` : ''}
-          ${ev.notes ? `<span style="font-size:.75rem;font-weight:600;background:var(--red-bg);color:var(--red);padding:2px 8px;border-radius:999px;">${escapeHtml(ev.notes)}</span>` : ''}
+          ${ev.notes ? `<span style="font-size:.75rem;font-weight:600;background:var(--red-subtle);color:var(--red);padding:2px 8px;border-radius:999px;">${escapeHtml(ev.notes)}</span>` : ''}
         </div>
         ${badge}`;
       container.appendChild(card);
@@ -177,7 +177,7 @@
           <div class="event-meta">
             ${showTime ? `<span>⏰ ${time} Uhr</span>` : ''}
             ${ev.locationText ? `<span>📍 ${escapeHtml(ev.locationText)}</span>` : ''}
-            ${ev.notesText ? `<span style="font-size:.75rem;font-weight:600;background:var(--red-bg);color:var(--red);padding:2px 8px;border-radius:999px;">${escapeHtml(ev.notesText)}</span>` : ''}
+            ${ev.notesText ? `<span style="font-size:.75rem;font-weight:600;background:var(--red-subtle);color:var(--red);padding:2px 8px;border-radius:999px;">${escapeHtml(ev.notesText)}</span>` : ''}
           </div>
           ${badge}`;
         card.style.cursor = 'pointer';
