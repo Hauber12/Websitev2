@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta content="only light" name="color-scheme"/>
-  <meta name="supported-color-schemes" content="light">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-  <!-- Preload critical assets -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/css/styles.modern.css?v7.0" as="style">
-  <link rel="preload" href="assets/img/notenschluessel.png" as="image">
-  
-<title>Vergangenes — Musikkapelle Simmerberg</title>
-<meta content="#ffffff" name="theme-color"/>
-<meta content="Archiv und Rückblicke vergangener Veranstaltungen." name="description">
-<link href="assets/css/styles.modern.css?v7.0" rel="stylesheet"/>
-</meta></meta></head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="color-scheme" content="only light"/>
+<meta name="supported-color-schemes" content="light"/>
+<meta name="theme-color" content="#f5efe4"/>
+
+<title>Vergangenes — MUKASI</title>
+<meta content="Rückblick auf vergangene Auftritte und Veranstaltungen der Musikkapelle Simmerberg." name="description"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="assets/css/styles.v8.css" as="style"/>
+<link rel="preload" href="assets/img/notenschluessel.png" as="image"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.v8.css" rel="stylesheet"/>
+</head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<header class="site-header" data-header="">
+
+<header class="site-header" data-header>
 <div class="container header-inner">
-<a aria-label="Startseite" class="brand-inline brand-inline--left" href="index.html">
-<img alt="Musikkapelle Simmerberg e.V." class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
+<a aria-label="Startseite" class="brand-inline" href="index.html">
+<img alt="" class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
 <div class="brand-inline-text">
 <span class="brand-inline-small">Musikkapelle</span>
 <span class="brand-inline-large">Simmerberg <small>e.V.</small></span>
 </div>
 </a>
-<nav aria-label="Hauptnavigation" class="site-nav site-nav--right" data-nav="">
+<nav aria-label="Hauptnavigation" class="site-nav" data-nav>
 <a class="nav-link" href="index.html">Home</a>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="verein.html">Musikkapelle</a>
-<div aria-label="Musikkapelle Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Musikkapelle Untermenü">
 <a class="dropdown-link" href="ueber-uns.html">Über uns</a>
 <a class="dropdown-link" href="verein-im-wandel.html">Verein im Wandel</a>
 <a class="dropdown-link" href="register.html">Register</a>
@@ -43,7 +44,7 @@
 </div>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="foerderverein.html">Förderverein</a>
-<div aria-label="Förderverein Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Förderverein Untermenü">
 <a class="dropdown-link" href="veranstaltungen.html">Veranstaltungen</a>
 </div>
 </div>
@@ -51,13 +52,16 @@
 <a class="nav-link" href="jugend.html">Jugend</a>
 <a class="nav-link nav-link--cta" href="termine.html">Termine 2026</a>
 </nav>
-<button type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="nav-toggle" data-nav-toggle="" type="button">
-<span aria-hidden="true" class="nav-toggle-bars"></span><span class="nav-toggle-label">Menü</span>
+<button type="button" class="nav-toggle" data-nav-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+<span aria-hidden="true" class="nav-toggle-bars"></span>
+<span class="nav-toggle-label">Menü</span>
 </button>
 </div>
-<div class="mobile-nav" data-mobile-nav="" hidden="" id="mobile-menu">
-<div class="container mobile-nav-inner">
-        <button class="mobile-nav-close" type="button" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
+</header>
+
+<div class="mobile-nav" data-mobile-nav id="mobile-menu">
+<div class="mobile-nav-inner">
+<button type="button" class="mobile-nav-close" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
 <a class="nav-link" href="index.html">Home</a>
 <details class="mnav-details">
 <summary class="mnav-summary">Musikkapelle</summary>
@@ -82,209 +86,59 @@
 <a class="nav-link" href="kontakt.html">Kontakt</a>
 </div>
 </div>
-</header>
-
 
 <main id="main">
-<section class="page-head page-head--photo">
-<div class="page-head-bg" style="background-image:url('assets/img/hero-bzmf-panorama.jpg')"></div>
+
+<section class="page-head">
+<div class="page-head-bg" style="background-image:url('assets/img/neujahrsblasen.jpg')"></div>
 <div class="page-head-overlay"></div>
 <div class="container">
-<p class="eyebrow">Archiv</p>
+<p class="eyebrow">Rückblick</p>
 <h1>Vergangenes</h1>
-<p class="lead">Über 10 Jahre Festzelt-Geschichte – von Näääxxt Fescht 1.0 bis heute.</p>
+<p class="lead">Ausgewählte Momente und Auftritte aus den letzten Jahren.</p>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-<div class="flyer-timeline">
-
-<div class="flyer-event" data-year="2025">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 9.0 Flyer" loading="lazy" src="assets/img/flyer-nf9.png"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Neueste Ausgabe</div>
-<div class="flyer-event-title">Näääxxt Fescht 9.0</div>
-<div class="flyer-event-date">08. – 10. Mai 2025</div>
-<div class="flyer-event-details">
-<strong>Donnerstag:</strong> Tegernseer Tanzlmusi · Alpensound <br/>
-<strong>Freitag:</strong> Papi's Pumpels · Allgäu Feager <br/>
-<strong>Samstag:</strong> Party Fever · Illertaler · 2 Engel &amp; Charlie 
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2024">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 8.0 Flyer" loading="lazy" src="assets/img/flyer-nf8.png"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">3-Tage-Programm</div>
-<div class="flyer-event-title">Näääxxt Fescht 8.0</div>
-<div class="flyer-event-date">09. – 11. Mai 2024</div>
-<div class="flyer-event-details">
-<strong>Donnerstag:</strong> OHO · Dirt Road · Die Draufgänger · Albkracher<br/>
-<strong>Freitag:</strong> Böhmischer Alptraum · DJ Marco Mzee · Mountain Crew<br/>
-<strong>Samstag:</strong> Die 4 Lustigen 5 · Stubete Gäng · Allgäu Feager
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2023">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 7.0 Flyer" loading="lazy" src="assets/img/flyer-nf7.png"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">2 Tage · Holz-Optik</div>
-<div class="flyer-event-title">Näääxxt Fescht 7.0</div>
-<div class="flyer-event-date">12. – 13. Mai 2023</div>
-<div class="flyer-event-details">
-<strong>Freitag:</strong> Die 4 Lustigen 5 · Fäaschtbänkler · DJ Marco Mzee<br/>
-<strong>Samstag:</strong> MV Scheffau · Allgäu Feager · Lorenz Büffel
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2022">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 6.0 Flyer" loading="lazy" src="assets/img/flyer-nf6.jpg"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Comeback nach Corona</div>
-<div class="flyer-event-title">Näääxxt Fescht 6.0</div>
-<div class="flyer-event-date">26. – 28. Mai 2022 · Festplatz Simmerberg</div>
-<div class="flyer-event-details">
-<strong>Donnerstag:</strong> Alpenblech · Die Draufgänger · La Paloma Boys<br/>
-<strong>Freitag:</strong> Die 4 Lustigen 5 · Fäaschtbänkler · DJ Marco Mzee<br/>
-<strong>Samstag:</strong> Christoph Glassehner · Allgäu Feager · Melissa Naschenweng
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2019">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 5.0 Flyer" loading="lazy" src="assets/img/flyer-nf5.jpg"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Beheiztes Festzelt</div>
-<div class="flyer-event-title">Näääxxt Fescht 5.0</div>
-<div class="flyer-event-date">10. – 11. Mai 2019</div>
-<div class="flyer-event-details">
-<strong>Freitag:</strong> Alpensound · Powerkryner<br/>
-<strong>Samstag:</strong> Die 4 Lustigen 5 · Lederrebellen
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2018">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="56. Bezirksmusikfest Flyer" loading="lazy" src="assets/img/flyer-bezirksmusikfest.jpg"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">4 Tage · Bezirksmusikfest</div>
-<div class="flyer-event-title">56. Bezirksmusikfest in Simmerberg</div>
-<div class="flyer-event-date">10. – 13. Mai 2018 </div>
-<div class="flyer-event-details">
-<strong>Do:</strong> MV Ellhofen · La Paloma Boys · Fäaschtbänkler<br/>
-<strong>Freitag:</strong> Bayern · Allgäu Feager<br/>
-<strong>Samstag:</strong> MV Scheffau · Powerkryner<br/>
-<strong>Sonntag:</strong> OHO · 4 Lustigen 5 · MK Wohmbrechts &amp; Gestratz
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2017">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 3.0 Flyer" loading="lazy" src="assets/img/flyer-nf3.png"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Festplatz Simmerberg</div>
-<div class="flyer-event-title">Näääxxt Fescht 3.0</div>
-<div class="flyer-event-date">05. – 06. Mai 2017</div>
-<div class="flyer-event-details">
-<strong>Freitag:</strong> Lederrebellen <br/>
-<strong>Samstag:</strong> Allgäu Feager · Powerkryner
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2016">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 2.0 Flyer" loading="lazy" src="assets/img/flyer-nf2.jpg"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Eintritt 9 €</div>
-<div class="flyer-event-title">Näääxxt Fescht 2.0</div>
-<div class="flyer-event-date">06. – 07. Mai 2016</div>
-<div class="flyer-event-details">
-<strong>Freitag:</strong> Lederrebellen<br/>
-<strong>Samstag:</strong> Quattropoly · Fättes Blech · Die Brasserie <br/> DJ Marco Mzee
-</div>
-</div>
-</div>
-
-<div class="flyer-event" data-year="2015">
-<div class="flyer-event-img">
-<div class="flyer-event-img-inner">
-<img alt="Näääxxt Fescht 1.0 Flyer" loading="lazy" src="assets/img/flyer-nf1.jpg"/>
-</div>
-</div>
-<div class="flyer-event-body">
-<div class="flyer-event-badge">Wo alles begann</div>
-<div class="flyer-event-title">Näääxxt Fescht 1.0</div>
-<div class="flyer-event-date">17. – 18. April 2015</div>
-<div class="flyer-event-details">
-<strong>Freitag:</strong> Lederrebellen<br/>
-<strong>Samstag:</strong> DJ Marco Mzee · Dorfrocker 
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="section section-alt" id="stimmungswettbewerb">
-<div class="container">
-<div class="section-head">
-<h2>Weitere Highlights</h2>
-</div>
-<div class="card icon-card" style="max-width:600px;">
-<div class="icon-card-icon">🎶</div>
-<div class="icon-card-body">
-<h3 class="h4">Stimmungswettbewerb Seibranz</h3>
-<p class="muted small">Rückblick und Ergebnisse vom Stimmungswettbewerb.</p>
-</div>
+<div class="grid grid-3">
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/bzmf-detail.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Auftritt</div><div class="past-card-title">Bezirksmusikfest</div><p class="muted small">Ein Höhepunkt des Jahres – gemeinsame Auftritte mit befreundeten Kapellen.</p></div>
+</article>
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/festumzug.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Auftritt</div><div class="past-card-title">Festumzug</div><p class="muted small">In voller Tracht und mit Fahnenabordnung bei lokalen Festen.</p></div>
+</article>
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/festzelt.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Konzert</div><div class="past-card-title">Festzelt</div><p class="muted small">Mitreißende Stimmung und Blasmusik vom Feinsten.</p></div>
+</article>
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/neujahrsblasen.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Tradition</div><div class="past-card-title">Neujahrsblasen</div><p class="muted small">Die musikalische Tradition zum Jahresbeginn.</p></div>
+</article>
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/neujahrsblasen2.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Tradition</div><div class="past-card-title">Silvesterblasen</div><p class="muted small">Musikalischer Jahresabschluss durch Simmerberg.</p></div>
+</article>
+<article class="past-card">
+<div class="past-card-img"><img alt="" loading="lazy" src="assets/img/ausflug-gruppe.jpg"/></div>
+<div class="past-card-body"><div class="past-card-date">Vereinsleben</div><div class="past-card-title">Ausflüge</div><p class="muted small">Gemeinsame Erlebnisse stärken die Gemeinschaft.</p></div>
+</article>
 </div>
 </div>
 </section>
 </main>
+
 <footer class="site-footer-new">
 <div class="container">
 <div class="footer-top-new">
 <div class="footer-brand-new">
-<img src="assets/img/notenschluessel.png" alt="" class="footer-logo-new" aria-hidden="true"/>
+<img alt="" aria-hidden="true" class="footer-logo-new" src="assets/img/notenschluessel.png"/>
 <div>
 <div class="footer-name-new">Musikkapelle Simmerberg</div>
-<div class="footer-tagline-new">Blasmusik für Jung & Alt seit Generationen</div>
+<div class="footer-tagline-new">Blasmusik für Jung &amp; Alt seit Generationen</div>
 </div>
 </div>
 <div class="footer-nav-new">
@@ -307,7 +161,7 @@
 <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
 <span class="footer-info-new">Proben: Freitag · 20:00 Uhr</span>
 <span class="footer-info-new">Simmerberg im Allgäu</span>
-<a href="kontakt.html" class="footer-cta-new">Schreib uns →</a>
+<a class="footer-cta-new" href="kontakt.html">Schreib uns <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
@@ -321,7 +175,9 @@
 </div>
 </div>
 </footer>
+
 <script src="assets/data/termine.v26.js"></script>
-<script defer="" src="assets/js/main.modern.js?v7.0"></script>
+<script defer src="assets/js/main.modern.js?v8"></script>
+
 </body>
 </html>

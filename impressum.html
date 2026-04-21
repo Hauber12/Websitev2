@@ -1,35 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta content="only light" name="color-scheme"/>
-  <meta name="supported-color-schemes" content="light">
-  <!-- Preload critical assets -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/css/styles.modern.css?v7.0" as="style">
-  <link rel="preload" href="assets/img/notenschluessel.png" as="image">
-  
-  <title>Impressum – Musikkapelle Simmerberg</title>
-  <link rel="stylesheet" href="assets/css/styles.modern.css?v7.0" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="color-scheme" content="only light"/>
+<meta name="supported-color-schemes" content="light"/>
+<meta name="theme-color" content="#f5efe4"/>
+
+<title>Impressum — MUKASI</title>
+<meta content="Impressum der Musikkapelle Simmerberg e.V." name="description"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="assets/css/styles.v8.css" as="style"/>
+<link rel="preload" href="assets/img/notenschluessel.png" as="image"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.v8.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="site-header" data-header="">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header" data-header>
 <div class="container header-inner">
-<a aria-label="Startseite" class="brand-inline brand-inline--left" href="index.html">
-<img alt="Musikkapelle Simmerberg e.V." class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
+<a aria-label="Startseite" class="brand-inline" href="index.html">
+<img alt="" class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
 <div class="brand-inline-text">
 <span class="brand-inline-small">Musikkapelle</span>
 <span class="brand-inline-large">Simmerberg <small>e.V.</small></span>
 </div>
 </a>
-<nav aria-label="Hauptnavigation" class="site-nav site-nav--right" data-nav="">
+<nav aria-label="Hauptnavigation" class="site-nav" data-nav>
 <a class="nav-link" href="index.html">Home</a>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="verein.html">Musikkapelle</a>
-<div aria-label="Musikkapelle Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Musikkapelle Untermenü">
 <a class="dropdown-link" href="ueber-uns.html">Über uns</a>
 <a class="dropdown-link" href="verein-im-wandel.html">Verein im Wandel</a>
 <a class="dropdown-link" href="register.html">Register</a>
@@ -39,7 +44,7 @@
 </div>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="foerderverein.html">Förderverein</a>
-<div aria-label="Förderverein Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Förderverein Untermenü">
 <a class="dropdown-link" href="veranstaltungen.html">Veranstaltungen</a>
 </div>
 </div>
@@ -47,13 +52,16 @@
 <a class="nav-link" href="jugend.html">Jugend</a>
 <a class="nav-link nav-link--cta" href="termine.html">Termine 2026</a>
 </nav>
-<button type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="nav-toggle" data-nav-toggle="" type="button">
-<span aria-hidden="true" class="nav-toggle-bars"></span><span class="nav-toggle-label">Menü</span>
+<button type="button" class="nav-toggle" data-nav-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+<span aria-hidden="true" class="nav-toggle-bars"></span>
+<span class="nav-toggle-label">Menü</span>
 </button>
 </div>
-<div class="mobile-nav" data-mobile-nav="" hidden="" id="mobile-menu">
-<div class="container mobile-nav-inner">
-        <button class="mobile-nav-close" type="button" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
+</header>
+
+<div class="mobile-nav" data-mobile-nav id="mobile-menu">
+<div class="mobile-nav-inner">
+<button type="button" class="mobile-nav-close" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
 <a class="nav-link" href="index.html">Home</a>
 <details class="mnav-details">
 <summary class="mnav-summary">Musikkapelle</summary>
@@ -78,72 +86,53 @@
 <a class="nav-link" href="kontakt.html">Kontakt</a>
 </div>
 </div>
-</header>
-<main class="page" id="main">
-  <section class="page-head">
-    <div class="container">
-      <p class="eyebrow">Rechtliches</p>
-      <h1>Impressum</h1>
-      <p class="lead">Angaben gemäß § 5 DDG</p>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="container" style="max-width:800px;">
+<main id="main">
 
-      <div class="card" style="padding: var(--space-lg); margin-bottom: var(--space-lg);">
-        <h2 style="margin-bottom: var(--space-md);">Inhaltlich verantwortlich</h2>
-        <p><strong>Musikkapelle Simmerberg e.V.</strong></p>
-        <p>Vorstandsteam: Johanna Blank, Markus Ihler, Martin Wucher</p>
-        <p style="margin-top: var(--space-sm);">
-          Buchstr. 11<br/>
-          88171 Simmerberg
-        </p>
-        <p style="margin-top: var(--space-sm);">
-          Tel.: <a href="tel:+491771745818">0177 – 174 58 18</a><br/>
-          E-Mail: <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
-        </p>
-        <p style="margin-top: var(--space-sm);">
-          Amtsgericht Kempten · Registernr.: 30407<br/>
-          USt-IdNr.: DE293060536
-        </p>
-      </div>
+<section class="page-head page-head--plain">
+<div class="container">
+<p class="eyebrow">Rechtliches</p>
+<h1>Impressum</h1>
+<p class="lead">Angaben gemäß § 5 TMG.</p>
+</div>
+</section>
 
-      <h2 style="margin-bottom: var(--space-md);">Haftungshinweise</h2>
+<section class="section">
+<div class="container container--narrow">
+<article class="card">
+<h2 class="h3">Angaben gemäß § 5 TMG</h2>
+<p>Musikkapelle Simmerberg e.V.<br/>
+Simmerberg<br/>
+88178 Weiler-Simmerberg</p>
 
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="margin-bottom: var(--space-xs);">Haftung für Inhalte</h3>
-        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Dienstanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, die übermittelten oder gespeicherten fremden Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-      </div>
+<h3 class="h3" style="margin-top:var(--s-5);">Vertreten durch</h3>
+<p>1. Vorstand: Christian Hauber<br/>
+2. Vorstand: Markus Ihler</p>
 
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="margin-bottom: var(--space-xs);">Haftung für Links</h3>
-        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-      </div>
+<h3 class="h3" style="margin-top:var(--s-5);">Kontakt</h3>
+<p>E-Mail: <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a></p>
 
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="margin-bottom: var(--space-xs);">Urheberrecht</h3>
-        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Die Betreiber der Seiten sind bemüht, stets die Urheberrechte anderer zu beachten bzw. auf selbst erstellte sowie lizenzfreie Werke zurückzugreifen. Beiträge Dritter sind als solche gekennzeichnet.</p>
-      </div>
+<h3 class="h3" style="margin-top:var(--s-5);">Haftung für Inhalte</h3>
+<p class="muted">Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
 
-      <div style="margin-bottom: var(--space-lg);">
-        <h3 style="margin-bottom: var(--space-xs);">Datenschutz</h3>
-        <p>Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies soweit möglich stets auf freiwilliger Basis. Die Nutzung der Angebote und Dienste ist, soweit möglich, stets ohne Angabe personenbezogener Daten möglich.</p>
-        <p style="margin-top: var(--space-sm);">Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails und dergleichen, vor.</p>
-        <p style="margin-top: var(--space-sm);">Unsere ausführliche Datenschutzerklärung findest du <a href="datenschutz.html">hier</a>.</p>
-      </div>
+<h3 class="h3" style="margin-top:var(--s-5);">Haftung für Links</h3>
+<p class="muted">Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
 
-    </div>
-  </section>
+<h3 class="h3" style="margin-top:var(--s-5);">Urheberrecht</h3>
+<p class="muted">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+</article>
+</div>
+</section>
 </main>
+
 <footer class="site-footer-new">
 <div class="container">
 <div class="footer-top-new">
 <div class="footer-brand-new">
-<img src="assets/img/notenschluessel.png" alt="" class="footer-logo-new" aria-hidden="true"/>
+<img alt="" aria-hidden="true" class="footer-logo-new" src="assets/img/notenschluessel.png"/>
 <div>
 <div class="footer-name-new">Musikkapelle Simmerberg</div>
-<div class="footer-tagline-new">Blasmusik für Jung & Alt seit Generationen</div>
+<div class="footer-tagline-new">Blasmusik für Jung &amp; Alt seit Generationen</div>
 </div>
 </div>
 <div class="footer-nav-new">
@@ -166,7 +155,7 @@
 <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
 <span class="footer-info-new">Proben: Freitag · 20:00 Uhr</span>
 <span class="footer-info-new">Simmerberg im Allgäu</span>
-<a href="kontakt.html" class="footer-cta-new">Schreib uns →</a>
+<a class="footer-cta-new" href="kontakt.html">Schreib uns <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
@@ -180,6 +169,9 @@
 </div>
 </div>
 </footer>
-<script src="assets/js/main.modern.js?v7.0" defer></script>
+
+<script src="assets/data/termine.v26.js"></script>
+<script defer src="assets/js/main.modern.js?v8"></script>
+
 </body>
 </html>

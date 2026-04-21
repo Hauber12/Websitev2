@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta content="only light" name="color-scheme"/>
-  <meta name="supported-color-schemes" content="light">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-  <!-- Preload critical assets -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/css/styles.modern.css?v7.0" as="style">
-  <link rel="preload" href="assets/img/notenschluessel.png" as="image">
-  
-<title>Förderverein — Musikkapelle Simmerberg</title>
-<meta content="#ffffff" name="theme-color"/>
-<meta content="Der Förderverein der Musikkapelle Simmerberg und seine Aktionen." name="description">
-<link href="assets/css/styles.modern.css?v7.0" rel="stylesheet"/>
-</meta></meta></head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="color-scheme" content="only light"/>
+<meta name="supported-color-schemes" content="light"/>
+<meta name="theme-color" content="#f5efe4"/>
+
+<title>Förderverein — MUKASI</title>
+<meta content="Der Förderverein der Musikkapelle Simmerberg." name="description"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="assets/css/styles.v8.css" as="style"/>
+<link rel="preload" href="assets/img/notenschluessel.png" as="image"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.v8.css" rel="stylesheet"/>
+</head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<header class="site-header" data-header="">
+
+<header class="site-header" data-header>
 <div class="container header-inner">
-<a aria-label="Startseite" class="brand-inline brand-inline--left" href="index.html">
-<img alt="Musikkapelle Simmerberg e.V." class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
+<a aria-label="Startseite" class="brand-inline" href="index.html">
+<img alt="" class="brand-inline-logo" src="assets/img/notenschluessel.png"/>
 <div class="brand-inline-text">
 <span class="brand-inline-small">Musikkapelle</span>
 <span class="brand-inline-large">Simmerberg <small>e.V.</small></span>
 </div>
 </a>
-<nav aria-label="Hauptnavigation" class="site-nav site-nav--right" data-nav="">
+<nav aria-label="Hauptnavigation" class="site-nav" data-nav>
 <a class="nav-link" href="index.html">Home</a>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="verein.html">Musikkapelle</a>
-<div aria-label="Musikkapelle Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Musikkapelle Untermenü">
 <a class="dropdown-link" href="ueber-uns.html">Über uns</a>
 <a class="dropdown-link" href="verein-im-wandel.html">Verein im Wandel</a>
 <a class="dropdown-link" href="register.html">Register</a>
@@ -43,7 +44,7 @@
 </div>
 <div class="nav-item has-dropdown">
 <a class="nav-link" href="foerderverein.html">Förderverein</a>
-<div aria-label="Förderverein Untermenü" class="dropdown" role="menu">
+<div class="dropdown" role="menu" aria-label="Förderverein Untermenü">
 <a class="dropdown-link" href="veranstaltungen.html">Veranstaltungen</a>
 </div>
 </div>
@@ -51,13 +52,16 @@
 <a class="nav-link" href="jugend.html">Jugend</a>
 <a class="nav-link nav-link--cta" href="termine.html">Termine 2026</a>
 </nav>
-<button type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="nav-toggle" data-nav-toggle="" type="button">
-<span aria-hidden="true" class="nav-toggle-bars"></span><span class="nav-toggle-label">Menü</span>
+<button type="button" class="nav-toggle" data-nav-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">
+<span aria-hidden="true" class="nav-toggle-bars"></span>
+<span class="nav-toggle-label">Menü</span>
 </button>
 </div>
-<div class="mobile-nav" data-mobile-nav="" hidden="" id="mobile-menu">
-<div class="container mobile-nav-inner">
-        <button class="mobile-nav-close" type="button" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
+</header>
+
+<div class="mobile-nav" data-mobile-nav id="mobile-menu">
+<div class="mobile-nav-inner">
+<button type="button" class="mobile-nav-close" data-nav-close aria-label="Menü schließen"><span aria-hidden="true">×</span> Schließen</button>
 <a class="nav-link" href="index.html">Home</a>
 <details class="mnav-details">
 <summary class="mnav-summary">Musikkapelle</summary>
@@ -82,128 +86,75 @@
 <a class="nav-link" href="kontakt.html">Kontakt</a>
 </div>
 </div>
-</header>
-
 
 <main id="main">
-<section class="page-head page-head--photo">
-<div class="page-head-bg" style="background-image:url('assets/img/hero-vogelperspektive.jpg')"></div>
+
+<section class="page-head">
+<div class="page-head-bg" style="background-image:url('assets/img/hero-marschmusik.jpg')"></div>
 <div class="page-head-overlay"></div>
 <div class="container">
-<p class="eyebrow">Förderverein</p>
-<h1>Unser Förderverein</h1>
-<p class="lead">Seit 2013 gemeinnützig im Einsatz für die Blasmusik in Simmerberg – ehrenamtlich, mit Herz und Leidenschaft.</p>
+<p class="eyebrow">Unterstützung</p>
+<h1>Förderverein</h1>
+<p class="lead">Der Förderverein sichert die Zukunft der Jugendausbildung und unterstützt die Musikkapelle Simmerberg.</p>
 </div>
 </section>
 
 <section class="section">
-<div class="container" style="max-width:900px;">
+<div class="container">
 
-<div class="grid grid-2" style="margin-bottom:var(--space-2xl);">
-<div class="card" style="text-align:center; padding:var(--space-lg);">
-<div class="highlight-number">2013</div>
-<h3 class="h4">Gründung</h3>
-<p class="muted small">Am 18. April 2013 in Simmerberg gegründet und am 10. Mai 2013 beim Amtsgericht Kempten ins Vereinsregister eingetragen. Der Verein ist als gemeinnützig anerkannt.</p>
-</div>
-<div class="card" style="padding:var(--space-lg);">
-<h3 class="h4">Vorstandschaft <span style="font-weight:400; font-size:.85rem; color:var(--color-text-muted);">(Stand: 2019)</span></h3>
-<p style="margin-top:var(--space-sm); line-height:1.8;">
-<strong>1. Vorstand:</strong> Verena Blank<br/>
-<strong>2. Vorstand:</strong> Leonie Stöckeler<br/>
-<strong>Kassier:</strong> Katharina Heim<br/>
-<strong>Schriftführer:</strong> Johanna Blank<br/>
-<strong>Beisitzer:</strong> Matthias Schadt, Sebastian Koch, Hannah Mariner
-</p>
-</div>
-</div>
-
-<div class="about-image-section" style="margin-bottom:var(--space-2xl);">
+<div class="about-split">
 <div class="about-image-frame">
-<img alt="Neujahrsblasen in Simmerberg" loading="lazy" src="assets/img/neujahrsblasen.jpg"/>
+<img alt="Förderverein" loading="lazy" src="assets/img/musikkapelle-gruppenfoto.png"/>
 </div>
 <div class="about-text">
-<p class="eyebrow">Was wir tun</p>
-<h2>Aktiv für die Blasmusik</h2>
-<p class="muted">Der Förderverein unterstützt die musikalische Ausbildung, organisiert Veranstaltungen und hilft bei der Anschaffung und Pflege von Instrumenten.</p>
-</div>
-</div>
-<div style="margin-bottom:var(--space-2xl);">
-<h2 style="margin-bottom:var(--space-md);">Unsere Ziele</h2>
-<div class="card" style="padding:var(--space-lg); border-left:4px solid var(--color-primary);">
-<p style="font-style:italic; color:var(--color-text-light); line-height:1.7;">
-„Hauptziel des Vereins ist die Förderung kultureller Zwecke durch Pflege der Blas- und Volksmusik. Er dient damit der Erhaltung und Verbreitung von Volksbrauchtum und bodenständiger Kultur sowie der Förderung der Volksbildung. Im Zusammenhang mit seinem Hauptzweck sieht der Verein seine Aufgaben auch in der Gewinnung der Jugend zur musischen Bildung und in der Bewahrung und Neubelebung bodenständiger Trachten. Des Weiteren will der Verein damit die Völkerverständigung fördern."
-</p>
-<p style="font-size:.85rem; color:var(--color-text-muted); margin-top:var(--space-sm);">— Auszug aus der Satzung</p>
-</div>
-<p style="margin-top:var(--space-md); line-height:1.7;">
-Konkret bedeutet das: Wir begleiten und unterstützen Kinder und Jugendliche während ihrer musikalischen Ausbildung an der Sing- und Musikschule – insbesondere durch die Bereitstellung geeigneter Musikinstrumente, deren Wartung und Pflege sowie die teilweise Übernahme von Ausbildungskosten. Unser Ziel ist es, die jungen Musikerinnen und Musiker an die Musikkapelle Simmerberg heranzuführen.
-</p>
-</div>
-
-<div style="margin-bottom:var(--space-2xl);">
-<h2 style="margin-bottom:var(--space-md);">So setzen wir das um</h2>
-<div class="grid grid-2">
-<div class="card icon-card" style="padding:var(--space-md);">
-<div class="icon-card-icon">🤝</div>
-<div class="icon-card-body">
-<h3 class="h4">Fördermitglieder</h3>
-<p class="muted small">Gewinnung von fördernden Mitgliedern, die unsere Arbeit finanziell und ideell unterstützen.</p>
-</div>
-</div>
-<div class="card icon-card" style="padding:var(--space-md);">
-<div class="icon-card-icon">🎉</div>
-<div class="icon-card-body">
-<h3 class="h4">Veranstaltungen</h3>
-<p class="muted small">Durchführung von Veranstaltungen zugunsten des Vereins – vom Kinderfasching bis zum Tag der offenen Tür.</p>
-</div>
-</div>
-<div class="card icon-card" style="padding:var(--space-md);">
-<div class="icon-card-icon">🎶</div>
-<div class="icon-card-body">
-<h3 class="h4">Ausbildung</h3>
-<p class="muted small">Organisation von Ausbildungsstunden und Vororchestern sowie Durchführung von Konzerten der Jungmusikerinnen und Jungmusiker.</p>
-</div>
-</div>
-<div class="card icon-card" style="padding:var(--space-md);">
-<div class="icon-card-icon">🌍</div>
-<div class="icon-card-body">
-<h3 class="h4">Begegnungen</h3>
-<p class="muted small">Begleitung bei Begegnungen und Partnerschaften, insbesondere in Form von Jugendaustausch.</p>
-</div>
-</div>
+<p class="eyebrow">Unser Förderverein</p>
+<h2>Musik braucht <em>Förderung</em></h2>
+<p class="muted">Der Förderverein der Musikkapelle Simmerberg wurde 2013 gegründet, um die musikalische Ausbildung und Anschaffung von Instrumenten dauerhaft zu sichern.</p>
+<a class="btn-primary" href="foerderverein-unser.html">Mehr erfahren</a>
 </div>
 </div>
 
-<div style="margin-bottom:var(--space-2xl);">
-<h2 style="margin-bottom:var(--space-md);">Gründungsmitglieder</h2>
-<p class="muted" style="line-height:1.7;">
-Josef Hartmann, Kerstin Ehlers, Christian Hauber, Markus Ihler, Adolf Paptistella, Markus Prinz, Matthias Schadt, Birgit Schmid (Scheidegg) und Martin Wucher – sie alle haben den Förderverein 2013 ins Leben gerufen.
-</p>
+<div class="grid grid-3" style="margin-top:var(--s-8);">
+<article class="card">
+<h3 class="h3">Jugend fördern</h3>
+<p class="muted">Wir übernehmen einen Großteil der Ausbildungskosten unserer Jungmusikanten.</p>
+<a class="link" href="foerderverein-jugend.html">Zur Jugendförderung</a>
+</article>
+<article class="card">
+<h3 class="h3">Instrumente</h3>
+<p class="muted">Anschaffung und Instandhaltung hochwertiger Instrumente für die Kapelle.</p>
+</article>
+<article class="card">
+<h3 class="h3">Veranstaltungen</h3>
+<p class="muted">Der Förderverein organisiert und unterstützt Veranstaltungen der Musikkapelle.</p>
+<a class="link" href="veranstaltungen.html">Zu den Veranstaltungen</a>
+</article>
 </div>
-
-<p class="muted small" style="margin-top:var(--space-lg);">Alle Mitglieder des Fördervereins arbeiten ausschließlich ehrenamtlich. Der Verein verfolgt ausschließlich gemeinnützige Zwecke.</p>
 
 </div>
 </section>
 
-<section class="section section-cta">
-<div class="container cta">
-<div>
-<h2>Unsere Veranstaltungen</h2>
-<p class="muted">Kinderfasching, Kinderfest und Tag der offenen Tür — Eindrücke und Infos.</p>
+<section class="section section-alt">
+<div class="container container--narrow">
+<p class="eyebrow">Mitmachen</p>
+<h2>Fördermitglied werden</h2>
+<p class="lead">Mit einer jährlichen Mitgliedschaft unterstützt du die musikalische Zukunft unserer Jugend und der gesamten Kapelle.</p>
+<div class="callout">
+<strong>Kontakt</strong>
+Für Anfragen zur Fördermitgliedschaft: <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
 </div>
-<a class="btn btn-primary" href="veranstaltungen.html">Zu den Veranstaltungen →</a>
 </div>
 </section>
 </main>
+
 <footer class="site-footer-new">
 <div class="container">
 <div class="footer-top-new">
 <div class="footer-brand-new">
-<img src="assets/img/notenschluessel.png" alt="" class="footer-logo-new" aria-hidden="true"/>
+<img alt="" aria-hidden="true" class="footer-logo-new" src="assets/img/notenschluessel.png"/>
 <div>
 <div class="footer-name-new">Musikkapelle Simmerberg</div>
-<div class="footer-tagline-new">Blasmusik für Jung & Alt seit Generationen</div>
+<div class="footer-tagline-new">Blasmusik für Jung &amp; Alt seit Generationen</div>
 </div>
 </div>
 <div class="footer-nav-new">
@@ -226,7 +177,7 @@ Josef Hartmann, Kerstin Ehlers, Christian Hauber, Markus Ihler, Adolf Paptistell
 <a href="mailto:mukasi@gmx.net">mukasi@gmx.net</a>
 <span class="footer-info-new">Proben: Freitag · 20:00 Uhr</span>
 <span class="footer-info-new">Simmerberg im Allgäu</span>
-<a href="kontakt.html" class="footer-cta-new">Schreib uns →</a>
+<a class="footer-cta-new" href="kontakt.html">Schreib uns <span aria-hidden="true">→</span></a>
 </div>
 </div>
 </div>
@@ -240,7 +191,9 @@ Josef Hartmann, Kerstin Ehlers, Christian Hauber, Markus Ihler, Adolf Paptistell
 </div>
 </div>
 </footer>
+
 <script src="assets/data/termine.v26.js"></script>
-<script defer="" src="assets/js/main.modern.js?v7.0"></script>
+<script defer src="assets/js/main.modern.js?v8"></script>
+
 </body>
 </html>
